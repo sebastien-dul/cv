@@ -73,7 +73,27 @@ a {
 
 /* Media query pour rétrécir l'écran */
 @media screen and (max-width: 1000px) {
+    * {
+        font-size: 10px;
+    }
 
+    h1 {
+        font-size: 2.5rem; /* Ajustez la taille à votre préférence */
+    }
+    
+    h2 {
+        font-size: 1.8rem; /* Ajustez la taille à votre préférence */
+    }
+
+    .header-inner .profile-image {
+        width: 200px; /* Ajustez la largeur à votre préférence */
+        height: 200px; /* Ajustez la hauteur à votre préférence */
+    }
+    
+    .box {
+        width: 80%;
+    }
+    
     .navbar {
         display: flex;
         flex-direction: column;
@@ -276,7 +296,7 @@ section h3 {
 
 .github .skill-value {
     background-color: #444444;
-    width: 40%;
+    width: 60%;
 }
 
 /* STYLE DES BOITES */
@@ -309,6 +329,8 @@ section h3 {
 }
 
 .projets .workPicture {
+    max-width: 100%;
+    height: auto;
     transition: transform 0.3s ease; /* Transition pour une animation fluide */
 }
 
